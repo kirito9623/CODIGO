@@ -1,3 +1,5 @@
+    SEMANA 1 - DIA 1
+    
     Este es el repositorio del grupo 8
 
     Cada clase se registrá en una carpeta organizada en semanas y días
