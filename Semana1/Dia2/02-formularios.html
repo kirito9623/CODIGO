@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form>div {
+            margin-top: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Formularios en Html</h1>
+    </header>
+
+    <main>
+
+        <form action="">
+
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Escribe Aqui">
+            </div>
+
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Escribe Aqui tu Apellido">
+            </div>
+
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" placeholder="Ejm:18">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ejm:rgonzalez@globalingenieros.com">
+            </div>
+
+            <div>
+                <label for="fecha">Fecha de Matricula</label>
+                <input type="date" id="fecha" min="2021-05-03">
+            </div>
+
+            <div>
+                <label for="Bootcamp">Seleccione Bootcamp </label>
+                <select id="Bootcamp">
+                    <option value="web">Desarrollo Web Fullstack</option>
+                    <option value="mkt">Marketing Digital</option>
+                    <option value="apps">Desarrollo de Aplicaciones moviles </option>
+                </select>
+
+            </div>
+
+            <div>
+                <label for="mensaje">Mensaje al profesor</label>
+                <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="">Escoja turno:</label>
+                <br />
+                <label for="">Dia</label>
+                <input type="radio" id="dia" name="turno">
+                <br />
+                <label for="">Noche</label>
+                <input type="radio" id="noche" name="turno">
+
+            <div>
+                    <label for="">Seleccione equipos a utilizar</label>
+                    <br />
+                    <label for="audios">Audifonos</label>
+                    <input type="checkbox" id="audios">
+                    <br />
+                    <label for="laptop">Laptop</label>
+                    <input type="checkbox" id="laptop">
+                    <br />
+                    <label for="laptop">Laptop</label>
+                    <input type="checkbox" id="laptop">
+            </div>
+                <!-- el name es importante para agrupar elementos, y se pueda escoger solo uno -->
+            </div>
+
+
+
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
