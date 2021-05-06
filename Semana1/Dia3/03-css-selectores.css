@@ -1,0 +1,59 @@
+/*
+    h2 selecciona a todos los h2 de la pagina
+*/
+
+
+h2{
+    color: crimson;
+}
+
+p, h1 {
+    color: #333;
+}
+/*
+    con la coma damos el mismo valor a varios elementos, en este caso todos los p y h1
+*/
+
+
+.sombra{
+    box-shadow: 0px 2px 8px #888;
+}
+
+
+.text-danger{
+    color: crimson;
+}
+
+.text-success{
+
+    color:green;
+}
+
+
+section p {
+    font-size: 30px;
+}
+
+p .badge-black{
+    background-color: #222;
+    color: #eee;
+}
+
+ul>li{
+    font-style: italic;
+}
+
+ul>li:hover{
+    background-color: crimson;
+}
+
+
+/*Afecta a los hijos directos, a todos los li que sean hijos en primer nivel de un ul */
+
+/*
+    el id tiene un valor de selector alto, mayor que la clase. el id no es recomendable usar
+*/
+
+/* Pseudoclases
+elemento:hover => estilos que se aplicaran en un elemento cuando el mouse 
+este encima del mismo */

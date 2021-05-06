@@ -1,0 +1,26 @@
+/*
+
+De cada grupo de elementos, el que ocupe
+la 3ra posicion, sera afectado
+
+elemento:nth-child(3)
+*/
+
+tr:nth-child(3){
+
+    background-color: crimson;
+
+}
+
+/* odd impar*/
+
+tbody tr:nth-child(odd){
+    background-color:brown;
+}
+
+
+tr:nth-child(even){
+
+    background-color: pink;
+
+}

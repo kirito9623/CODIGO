@@ -27,22 +27,29 @@
 
             <div>
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Escribe Aqui">
+                <input type="text" id="nombre" placeholder="Escribe Aqui" required>
             </div>
 
             <div>
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" placeholder="Escribe Aqui tu Apellido">
+                <input type="text" id="apellido" placeholder="Escribe Aqui tu Apellido" required minlegth="3">
             </div>
 
             <div>
                 <label for="edad">Edad</label>
-                <input type="number" id="edad" placeholder="Ejm:18">
+                <input type="number" id="edad" placeholder="Ejm:18" min="17" max="50">
             </div>
 
             <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Ejm:rgonzalez@globalingenieros.com">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Echt! minimo 8 caracteres, una mayuscula, una minuscula y un numero">
+
+                <!-- en el pattern de formulario para contrasena damos parametro de los requisitos de la contrasena-->
             </div>
 
             <div>
@@ -55,7 +62,7 @@
                 <select id="Bootcamp">
                     <option value="web">Desarrollo Web Fullstack</option>
                     <option value="mkt">Marketing Digital</option>
-                    <option value="apps">Desarrollo de Aplicaciones moviles </option>
+                    <option value="apps" select>Desarrollo de Aplicaciones moviles </option>
                 </select>
 
             </div>
