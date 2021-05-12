@@ -15,10 +15,12 @@ body {
 .card {
   width: 400px;
   height: 600px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px #aaa;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px black;
   margin: 100px auto 0 auto;
   position: relative;
+  overflow: hidden;
+  
 }
 
 .image {
@@ -27,7 +29,9 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://inmobiliare.com/himalaya/wp-content/uploads/2020/06/Nueva-York_1-1000x600.jpg);
   background-size: cover;
+  animation: cuadrado 5s ease 0s infinite normal;
 }
+
 
 
 
@@ -105,7 +109,8 @@ ul {
   display: flex;
   align-content: space-between;
   margin-left: 45px;
-  margin-top: 60px;
+  position:fixed;
+  top:650px;
   list-style: none;
 }
 
@@ -126,4 +131,57 @@ ul li a {
 
 .fa-comment{
     color:grey;
+}
+
+
+.image:hover {
+    position:relative;
+
+    width: 400px;
+    height: 300px;
+    background-image: 
+      url(https://inmobiliare.com/himalaya/wp-content/uploads/2020/06/Nueva-York_1-1000x600.jpg);
+
+    transition: all 3s ease;
+  }
+
+
+  .card:hover .card__info{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    position:relative;
+    
+  }
+
+
+  .card:hover ul{
+   
+    display: flex;
+    position:fixed;
+    top:650px;
+    align-content: space-between;
+    list-style: none;
+  }
+
+
+  .card:hover .card__description {
+    display: flex;
+    margin-left: 45px;
+    margin-top: 5px;
+    overflow: hidden;
+    width:300px;
+    transition: all 3s ease;
+  }
+  
+
+  
+@keyframes cuadrado{
+
+   
+
+
 }
