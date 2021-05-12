@@ -1,0 +1,34 @@
+body{
+    background-color: #333;
+    color: #eee;
+}
+
+
+h1{
+    font-family: arial;
+    font-size: 1em;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 16px;
+    word-spacing: 15px;
+
+}
+
+.parrafo1 {
+
+    text-align: center;
+    line-height: 25px;
+}
+
+
+.btn1 {
+    text-align: center;
+}
+
+.tachado{
+    text-decoration: line-through;
+}
+
+
+/* un 1em el tamano de una letra del padre directo del elemento*/
+/* impotante el em para disenos responsivos para quie lo hijos al cambiar a una pantalla mas pequena se encojan en funcion al padre */

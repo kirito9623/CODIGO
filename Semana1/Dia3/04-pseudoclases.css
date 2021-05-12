@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    font-family: Roboto;
+  
+}
+
+
+/*se selecciona a todos los hijos del div*/
+div *{
+
+}
+
 /*
 
-De cada grupo de elementos, el que ocupe
-la 3ra posicion, sera afectado
+De cada grupo de elementos tr, el que ocupe
+la 3ra posicion, sera afectado. es decir del thead el r
 
 elemento:nth-child(3)
 */
+
+/* de cada grupo de tr el tecer elemento*/
 
 tr:nth-child(3){
 
@@ -12,7 +28,7 @@ tr:nth-child(3){
 
 }
 
-/* odd impar*/
+/* odd= impares, even= pares*/
 
 tbody tr:nth-child(odd){
     background-color:brown;
@@ -23,4 +39,143 @@ tr:nth-child(even){
 
     background-color: pink;
 
+}
+
+td:nth-child(3), th:nth-child(3) {
+    background-color: rgb(176, 92, 255);
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+   
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+
+
+
+/*Como quitar el margen entre celdas a una tabla*/
+
+table{
+    border-collapse: collapse;
+}
+
+td{
+    padding: 10px;
+}
+
+
+
+
+tbody tr:first-child {
+
+    background-color:greenyellow;
+    
+}
+
+tbody tr:first-child td:first-child {
+
+    border-top-left-radius: 15px ;
+
+}
+
+
+
+tbody tr:first-child td:last-child {
+
+    border-top-right-radius: 15px ;
+
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 10px;
+   
+}
+
+
+/* afectara a alementos que tienen la clases nav-link y  ademas que tengan la clase active, por eso no hay espacio*/
+
+.nav-link.active {
+    font-style: italic;
+
+}
+
+
+.nav-link.active:hover {
+
+    background-color: crimson;
+}
+
+.nav-link.active:focus {
+
+    background-color: goldenrod;
+}
+
+
+/*todos los elementos p que sean hermanos de h2*/
+
+h2~p {
+ color: orange;
+}
+
+/* solo afecta al primer parrafo que sea hermano directo del H3*/
+
+h3 + p {
+
+ color: crimson;
+}
+
+/*afecta a todos los articulos menos a alos carticulos que tengan la clase agotado*/
+
+article:not(.agotado){
+
+    width: 800px;
+    box-shadow: 0px 0px 8px #888;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,94,125,1) 44%, rgba(30,117,147,1) 69%, rgba(0,212,255,1) 100%);
+}
+
+
+
+/*Todos los hijos de article excepto los h4*/
+article :not(h4){
+    font-style: italic;
+    color: gray;
+}
+
+
+
+
+
+h2 h3{
+    font-family: "Itim";
+    text-align: center;
+}
+
+
+  
+    
+a{
+    background-color: crimson;
+    color:white;
+    font-family: "Itim-Regular";
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.hola{
+    margin-top: 50px;
 }

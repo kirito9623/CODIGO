@@ -1,0 +1,80 @@
+*{margin:0;
+box-sizing: border-box;
+padding: 0;}
+
+
+
+
+body{
+    background-image:linear-gradient(to left, gray, black);
+    background-image:-moz-linear-gradient(to left, gray, black);
+    background-image: -o-linear-gradient(to left, gray, black);
+    background-image: -webkit-linear-gradient(to left, gray, black);
+
+    border: 1px solid yellow;
+    min-height: 100vh;
+
+    /*
+    min-height Vs height
+    height: define una altura estatica indepentdiemente del 
+    conenitdo de un elementos
+    min heigth: define una altura minima para un elemento.
+    si su contenido necesita mas de esta altura, entonces
+    el elemento se expandira
+    */
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 4rem;
+    font-family: sans-serif;
+    background-clip: text;
+    /*background-clip: es una mascara de recorte en forma del texto interno*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    background-image: linear-gradient(to right, #fd8625,#eccf2c);
+}
+
+
+.card{
+
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 0px 8px #bbb;
+    border-radius: 10px;
+    margin: 50px auto 0 auto ;
+    transition: all 0.5s ease, background-color 3s ease;
+    animation: cuadrado 5s ease 0s infinite normal;
+}
+
+/*colocar transiciones en el estatico no el el hover*/
+
+.card:hover{
+    transform: scale(1.1,1.1) rotate(10deg);
+    cursor: pointer;
+    background-color: #888;
+}
+
+@keyframes cuadrado{
+
+    0% {
+      
+     height: 50px;
+     width: 50px;
+    }
+
+    50% {
+       background-color: #eccf2c;
+       transform: translate(300px, 0px);
+
+    }
+
+    100% {
+        background-color: #fd8625;
+
+    }
+
+
+}

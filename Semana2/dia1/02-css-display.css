@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header{
+
+    height: 60px;
+    box-shadow: 0px 0px 8px #bbb;
+}-
+
+
+.color-primario{
+    color: #a11477;
+}
+
+.navegacion{
+    /*opacity:0; => colocar de color transparente a un elemento,
+    pero aun asi puedo seleccionarlo o dar click en el elemento
+    pero ademas nose puede seleccionar o dar clic al elementos
+    Sin embargo su espacio en el DOM es respetado
+    /*
+    display:block => desaparece un elemento del desbordamiento
+    y su espacio es ocupado por los demas elementos
+    */
+    
+   /* display:none;*/
+
+}
+
+
+aside{
+    height:calc(100vh - 60px);
+    background-color: #a11477;
+    width: 240px;
+    
+}
+
+
+section, aside {
+    display:inline-block
+}
+
+.navegacion ul{
+    border: 1px solid red;
+}
+
+.navegacion ul  li{
+    border: 1px solid red;
+    display:inline-block;
+    margin-right: 10px;
+    background-color: #a11477;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navegacion ul li a{
+
+    text-decoration: none;
+    color: #222;
+    color: white;
+}
+
+.navegacion ul li:hover a{
+    text-decoration: underline;
+    
+}
+
+
+.navegacion ul li i{
+    transition: all 0.5s ease;
+}
+
+.navegacion ul li:hover i {
+    transform: rotate(45deg);
+}
+

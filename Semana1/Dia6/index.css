@@ -1,0 +1,115 @@
+:root{
+
+    --color-primario: #ff4433;
+    --color-secundario: rgb(200,50,40);
+    --font-Roboto: "Roboto";
+    --color-rojo-transparente: rgba(200,55,63,1);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*box sizing */
+}
+
+h1{
+    color: var(--color-primario);
+    background-color: #ddd;
+    padding: 10px 30px
+}
+
+.form-control{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    padding: 8px 8px 8px 50px;
+    border: 1px dashed #f17469;
+    border-left: 3px dotted #f17469;
+    border-bottom: 5px solid var(--color-primario);
+    background-image: url("./id-card.png");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 30px 30px;
+    border-radius: 10px;
+}
+
+/*Cuando el input tiene el cursos dentro de si*/
+
+.form-control:focus{
+    background-image: url("./id-card\ \(1\).png");
+    border: 1px solid #f17469;
+}
+
+
+
+.cuadrado{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: var(--color-secundario);
+}
+
+
+/*hsl el primer valor es de grado, el segundo valor es la saturacion y el
+ tercer valor es el brillo
+ hsl(60,100%,50%)
+*/
+
+.seccion1{
+    background-color: var(--color-primario);
+    height:50%;
+    /*50% del ancho del padre*/
+    width: 50%;
+}
+
+.articulo{
+    background-color: var(--color-secundario);
+    height: 30px;
+    width: 50%;
+}
+
+.parrafo1{
+    width: 200px;
+    height: 100px;
+    background-color: #ddd;
+    overflow:auto;
+  
+    /*overflow sirver para controlar el desbordamiento
+    del contenido del elemento*/
+}
+
+/* Personalizar scrollbar */
+
+.parrafo1::-webkit-scrollbar{
+    width: 10px; /*ancho del scroll vertical*/
+}
+
+.parrafo1::-webkit-scrollbar-thumb{
+    /*la barrita de desplazamiento*/
+    border-radius: 5px;
+    background-color: #ff4433;
+}
+
+.parrafo1::-webkit-scrollbar-track{
+    /*la pista donde se desplaza la barrita*/
+    background-color: #aa4433;    
+}
+
+
+/*OJO: Los ELEMENTOS INLINE no pueden tener ancho ni alto definido*/
+
+.badge-rojo{
+    height: 100px;
+    width: 50px;
+}
+
+
+.imagen{
+    width:150px;
+    border-radius: 30px;
+    overflow: hidden;
+}

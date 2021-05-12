@@ -1,0 +1,38 @@
+
+
+*{
+
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.cuadrado{
+    width:200px;
+    height:200px;
+    background-color: crimson;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    /*box-shadow: [pixeles-eje-x] [pixeles-eje-Y] [difuminado] [color];
+    box-shadow: 0px 0px 0px black;*/
+
+    /* inset valor */
+
+    box-shadow: 8px 10px 8px #bbb ;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+
+.cuadrado:hover{
+    box-shadow: 0px 0px 4px #bbb;
+}
+
+
+
+h1{
+
+    text-shadow: 0px 0px 10px rgb(3, 3, 3);
+}
