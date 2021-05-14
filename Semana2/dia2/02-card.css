@@ -53,6 +53,7 @@ body {
   font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
+  z-index:100
 }
 
 .clase27 {
@@ -86,6 +87,7 @@ body {
   width: 400px;
   height: 200px;
   position:relative;
+  transition: all 3s ease
   
 }
 
@@ -103,14 +105,16 @@ h3 {
   font-weight: bolder;
 }
 
+
+.feed{
+    position:relative;
+}
+
 ul {
-  
   
   display: flex;
   align-content: space-between;
   margin-left: 45px;
-  position:fixed;
-  top:650px;
   list-style: none;
 }
 
@@ -136,7 +140,6 @@ ul li a {
 
 .image:hover {
     position:relative;
-
     width: 400px;
     height: 300px;
     background-image: 
@@ -161,8 +164,8 @@ ul li a {
   .card:hover ul{
    
     display: flex;
-    position:fixed;
-    top:650px;
+    position:absolute;
+   /* top:250px;*/
     align-content: space-between;
     list-style: none;
   }

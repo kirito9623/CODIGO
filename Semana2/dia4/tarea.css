@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Roboto;
+  }
+
+
+.card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 0px 0px #bbb;
+    margin: 50px 50px;
+  
+
+  }
+
+
+  .card1 {
+    width: 300px;
+    height: 250px;
+    box-shadow: 0px 0px 15px #bbb;
+    border-radius: 7px;
+    overflow: hidden;
+    position:relative;
+    border-bottom: 1px dashed #E36F2D ;
+  }
+
+  .texto{
+    z-index: 10;
+    color: white;
+    position:absolute;
+    top: 80px;
+    font-family: Roboto;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+
+
+
+
+  .card__figure {
+    overflow: hidden;
+    height: 180px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+  }
+
+
+  .card__figure img {
+    position: relative;
+    top: 150px;
+    left: 150px;
+  }
+
+  .card__services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height:70px;
+    color: black;
+    font-family: Roboto;
+    font-size: 1rem;
+    
+  }
+
+
+  .card__services{
+      gap:4rem;
+  }
+
+
+  .nc{
+      display: flex;
+      justify-content: flex-end;
+  }
+
+
+
+  
+  .card2 {
+    width: 300px;
+    height: 220px;
+    box-shadow: 0px 0px 15px #bbb;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+  .card__content{
+
+
+    flex:1;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    list-style: none;
+    
+
+  }
+
+
+  .card__description{
+
+    
+     display: flex;
+     flex-wrap: wrap;
+
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+.parrafo2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+    
+    width:50px;
+    font-size: 0.9rem;
+}
+
+
+.card__description2{
+    
+    font-size: 2rem;
+    color:#E36F2D;
+ }
+
+.parrafo3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content:flex-end;;
+    width:70px;
+    font-size: 0.9rem;
+    
+}
+
+ 
+ .boton{
+
+    background-color: #E36F2D;
+    padding: 4px;
+    font-size: 0.7rem;
+    color:white;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 5px;
+    
+ }
+
+strong{
+    margin-left: 5px;
+}
+
+.contenedor{
+   
+    flex:1;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: start;
+    list-style: none;
+
+}
+
+
+.fa-clock {
+    color:grey;
+}
+
+.fa-plane{
+    color: dimgray;
+}
