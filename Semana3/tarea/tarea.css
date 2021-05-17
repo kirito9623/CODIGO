@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "Commissioner-Medium";
+  src: url(./assets/fonts/Commissioner-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Commissioner-ExtraBold";
+  src: url(./assets/fonts/Commissioner-ExtraBold.ttf);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Commissioner-Medium;
+}
+
+.body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url(./assets/images/image-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container:before {
+  background-image: url(./assets/images/image-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  margin: 40px;
+  margin-right: 12.5vh;
+  margin-left: 12.5vh;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav__item a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu .nav__item {
+  margin: 15px;
+}
+
+.nav__item a:hover {
+  color: yellow;
+}
+
+.main__container {
+  min-height: 100vh;
+  width: 50vw;
+  background-color: white;
+
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  left: 25%;
+  z-index: 1;
+  top: 37.5%;
+  border-radius: 15px;
+}
+
+.logo1 {
+  width: 100%;
+  height: 30px;
+
+  position: relative;
+}
+
+.imagen {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.caja {
+  margin-top: 40px;
+  height: 100px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Commissioner-ExtraBold";
+}
+
+.title__paragraph {
+  color: hsl(0, 0%, 48%);
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.back {
+  background-color: hsl(176, 50%, 47%);
+  color: white;
+  padding: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 30px;
+  height: 50px;
+  margin-left: 40px;
+}
+
+.cajita2 {
+  margin-right: 40px;
+}
+
+.imagen2 {
+  height: 50px;
+}
+
+.caja2 {
+  margin-top: 40px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.bookmark {
+  font-family: "Commissioner-ExtraBold";
+  color: hsl(0, 0%, 48%);
+  margin-left: 10px;
+}
+
+.box2 {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.caja3 {
+  margin-top: 40px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cajita3 {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 100px;
+}
+
+.progress__bar {
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 30px;
+  height: 15px;
+  width: 500px;
+  margin-left: 40px;
+}
+
+.caja4 {
+  margin-top: 100px;
+  height: 200px;
+  width: 100%;
+  display: flex;
+}
+
+.cajita4 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 100px;
+}
+
+.title__paragraph__main {
+  font-family: "Commissioner-ExtraBold";
+  font-size: 16px;
+}
+
+.caja5 {
+  margin-top: 40px;
+ min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cajita5 {
+  margin-top: 10px;
+  height: 200px;
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 80%);
+  display: flex;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 100px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.title__paragraph__main2 {
+  margin-left: 20px;
+  font-family: "Commissioner-ExtraBold";
+}
+
+.title__paragraph__main3 {
+  margin-right: 20px;
+  color: hsl(176, 50%, 47%);
+}
+
+.box5 {
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title__paragraph4 {
+  color: hsl(0, 0%, 48%);
+  margin-top: 20px;
+  font-size: 16px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.cajita6 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  margin-top: 30px;
+}
+
+
+.caja3-1-1{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+
+.back1 {
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    padding: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 30px;
+    height: 50px;
+    width: 220px;
+  }
+
+  .title__paragraph8{
+      
+      width:40px;
+      margin-left: 10px;
+  }
