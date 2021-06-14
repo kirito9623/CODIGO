@@ -1,0 +1,46 @@
+*{margin:0;
+padding: 0;}
+
+body{
+    font-family: "Heveltica";
+    background-color: red;
+}
+
+
+
+@media screen and (max-width:1044px) {
+    body{
+        background-color: rgb(64,255,0);
+}
+
+
+@media screen and (max-width:1024px) {
+    body{
+        background-color: bisque;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    body{
+        background-color: skyblue;
+    }
+
+    p {
+        color:red;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:480px) {
+    body{
+        background-color: purple;
+    }
+
+    p {
+        color:white;
+    }
+}

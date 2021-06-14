@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Sora Medium";
+    src: url(./fonts/Sora-Light.ttf);
+  }
+
+
+*{font-family: Sora Medium;
+}
+
+.navbar {
+        font-family: Sora Medium;
+}
+
+
+
+.form-check-input:checked {
+    background-color: #0dfd79 !important;
+    border-color: #0dfd79 !important;
+}
+
+.celeste{
+    color: #6ECAF1;
+}
+
+.solicitar{
+    background-color: #6ECAF1 !important;
+    border: #6ECAF1  !important;
+}
+
+
+.solicitar:hover {
+    background-color: #0dfd79 !important;
+    border-color: #0dfd79 !important;
+}
+
+.borde{
+    border: 1px solid black;
+    width: 50vw;
+    
+}
+
